@@ -13,7 +13,9 @@ services:
   nextjs:
     container_name: ${APP_NAME}
     build:
-      context: ./
+      context: .
+      dockerfile: Dockerfile
+    restart: always
     depends_on:
       - db
     ports:
