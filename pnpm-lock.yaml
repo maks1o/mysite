@@ -6,6 +6,7 @@ specifiers:
   '@next-auth/prisma-adapter': ^1.0.3
   '@prisma/client': ^3.14.0
   '@types/node': 17.0.31
+  '@types/prettier': ^2.6.0
   '@types/react': 18.0.9
   '@types/react-dom': 18.0.3
   autoprefixer: ^10.4.7
@@ -38,6 +39,7 @@ dependencies:
 
 devDependencies:
   '@types/node': 17.0.31
+  '@types/prettier': 2.6.0
   '@types/react': 18.0.9
   '@types/react-dom': 18.0.3
   autoprefixer: 10.4.7_postcss@8.4.13
@@ -303,6 +305,10 @@ packages:
 
   /@types/node/17.0.31:
     resolution: {integrity: sha512-AR0x5HbXGqkEx9CadRH3EBYx/VkiUgZIhP4wvPn/+5KIsgpNoyFaRlVe0Zlx9gRtg8fA06a9tskE2MSN7TcG4Q==}
+    dev: true
+
+  /@types/prettier/2.6.0:
+    resolution: {integrity: sha512-G/AdOadiZhnJp0jXCaBQU449W2h716OW/EoXeYkCytxKL06X1WCXB4DZpp8TpZ8eyIJVS1cw4lrlkkSYU21cDw==}
     dev: true
 
   /@types/prop-types/15.7.5:
