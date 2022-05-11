@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import Header from '../components/Headers'
+import Header from 'components/Headers'
 
 const Home: NextPage = () => {
   return (

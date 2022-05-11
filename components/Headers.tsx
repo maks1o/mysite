@@ -3,8 +3,7 @@ import Image from 'next/image'
 import { signIn, signOut, useSession } from 'next-auth/react'
 
 export default function Header() {
-  const { data: session, status } = useSession()
-  const loading = status === 'loading'
+  const { data: session } = useSession()
 
   return (
     <header>
@@ -62,7 +61,7 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link href="/me">
+            <Link href="/users/me">
               <a>Me</a>
             </Link>
           </li>
