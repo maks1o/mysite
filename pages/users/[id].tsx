@@ -2,11 +2,8 @@ import Header from '../../components/Headers'
 import { GetServerSideProps, NextPage } from 'next'
 import type { User } from '@prisma/client'
 
-interface Props {
-  user: User
-}
 
-const UserPage: NextPage<Props> = ({ user }) => {
+const UserPage: NextPage<{ user: User }> = ({ user }) => {
   return (
     <>
       <Header />
