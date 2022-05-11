@@ -7,8 +7,6 @@ export default async function handle(
   res: NextApiResponse<User | null>
 ) {
   const userId = req.query.id.toString()
-  console.log(userId)
-
   if (req.method === 'GET') {
     handleGET(userId, res)
   } else {

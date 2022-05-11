@@ -1,12 +1,12 @@
-import type { NextPage } from 'next'
-import Header from 'components/Headers'
+import { ReactElement } from 'react'
+import type { User } from '@prisma/client'
+import Layout from 'components/Layout'
 
-const Home: NextPage = () => {
+const Home = () => {
   return (
-    <>
-      <Header />
-      <h1 className="text-center text-gray-900">Hello Next.JS App</h1>
-    </>
+    <Layout>
+      <p>Its home page</p>
+    </Layout>
   )
 }
 

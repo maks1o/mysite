@@ -42,10 +42,10 @@ model Session {
 
 model User {
   id            String    @id @default(cuid())
-  name          String?
+  name          String    @default("Безликий")
   email         String?   @unique
   emailVerified DateTime? @map("email_verified")
-  image         String?
+  image         String    @default("https://media.giphy.com/media/ayMW3eqvuP00o/giphy.gif")
   accounts      Account[]
   sessions      Session[]
 
